@@ -5,6 +5,7 @@
   "main": "http_server.js",
   "type": "module",
   "scripts": {
+    "build": "npm install",
     "start": "node http_server.js"
   },
   "author": "leasman7@gmail.com",
@@ -15,5 +16,10 @@
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "lowdb": "^3.0.0"
+  },
+  "engines": {
+
+    "node": "14.x"
+
   }
 }

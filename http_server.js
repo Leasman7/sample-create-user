@@ -9,10 +9,6 @@ const file = join(__dirname, 'db.json');
 const adapter = new JSONFile(file);
 const db = new Low(adapter);
 
-
-// Read data from JSON file, this will set db.data content
-await db.read()
-
 // allow cross-origin resource sharing (CORS)
 app.use(cors());
 
@@ -26,6 +22,8 @@ app.use(express.static('public'));
 import bodyParser from 'body-parser';
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+let port = process.env.PORT || 3000;
 
 // return all users
 app.get('/data', function(req, res) {
@@ -60,6 +58,6 @@ app.post('/add', function(req, res){
 })
 
 //start server
-app.listen(3000, function() {
-    console.log('Running on port 3000!');
+app.listen(port, function() {
+    console.log(`Running on port ${port}!`);
 });
