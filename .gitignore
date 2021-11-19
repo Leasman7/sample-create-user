@@ -104,4 +104,7 @@ dist
 .tern-port
 
 # Created Users
-./db.json
+db.json
+
+#folder that pops up randomly
+UsersSavannah~1The~1MightyCoding~1BootcampWeek~119cartDB/
