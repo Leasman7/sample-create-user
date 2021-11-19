@@ -17,7 +17,7 @@ await db.read()
 app.use(cors());
 
 // init the data store
-db.data ||= { users: [] };
+db.data = db.data || { users: [] }
 
 //serve static files from public directory
 app.use(express.static('public'));
