@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {
     "start": "node http_server.js"
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "leasman7@gmail.com",
   "license": "MIT",
